@@ -1,0 +1,3 @@
+[submodule "rigidbody/vendor/spdlog"]
+	path = rigidbody/vendor/spdlog
+	url = https://github.com/gabime/spdlog
