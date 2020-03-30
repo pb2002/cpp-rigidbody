@@ -3,6 +3,8 @@
 
 #include "renderer.h"
 
+App* App::current;
+
 void App::init(const char* title, int width, int height, bool fullscreen) {
 	if (SDL_Init(SDL_INIT_EVERYTHING)) {
 		log_crit("Could not initialize SDL.");
@@ -16,12 +18,44 @@ void App::init(const char* title, int width, int height, bool fullscreen) {
 		log_crit(SDL_GetError());
 	}
 	Renderer::init(current->m_Window);
-
+	current->m_rigidbodies = std::vector<Rigidbody*>();
 	current->m_running = true;
 }
 
-void App::on_event() {}
+void App::on_event() {
+	SDL_Event e;
+	while (SDL_PollEvent(&e)) {
+		if (e.type == SDL_QUIT) quit();
+	}
+}
 
-void App::on_update() {}
+void App::on_update() {
+	for (int i = 0; i < m_rigidbodies.size(); i++) {
+		for (int j = i; j < m_rigidbodies.size(); j++) {
+			Rigidbody::check_collision(*m_rigidbodies[i], *m_rigidbodies[j]);
+		}
+		m_rigidbodies[i]->on_update();
+	}
+}
 
-void App::on_render() {}
+void App::on_render() {
+	Renderer::current->fill_color(32, 48, 64, 255);
+	for (Rigidbody* rb : m_rigidbodies) {
+		rb->on_render();
+	}
+	Renderer::current->show();
+}
+
+void App::push_rb(Rigidbody* rb) {
+	m_rigidbodies.push_back(rb);
+}
+
+Rigidbody const* App::get_rb(int index) {
+	assert(index < m_rigidbodies.size());
+	return m_rigidbodies[index];
+}
+
+void App::quit() {
+	m_running = false;
+	SDL_Quit();
+}
