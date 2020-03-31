@@ -20,8 +20,19 @@ void Renderer::draw_circle(vec2 pos, double radius) {
 	filledCircleRGBA(m_renderer, x, y, m_world->world_to_screen(radius), m_drawingColor.r, m_drawingColor.g, m_drawingColor.b, m_drawingColor.a);
 }
 void Renderer::show() {
+
 	SDL_RenderPresent(m_renderer);
 }
+
+vec2 Renderer::screen_to_world(int x, int y) { return m_world->screen_to_world(x, y); }
+
+// Returns the top-left corner in world space coordinates.
+
+vec2 Renderer::topleft() { return m_world->screen_to_world(0, 0); }
+
+// Returns the bottom-right corner in world space coordinates.
+
+vec2 Renderer::bottomright() { return m_world->screen_to_world(__param_screenWidth, __param_screenHeight); }
 
 void Renderer::fill_color(int r, int g, int b, int a) {
 	SDL_SetRenderDrawColor(m_renderer, r, g, b, a);

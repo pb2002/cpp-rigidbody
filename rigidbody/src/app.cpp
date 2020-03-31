@@ -30,11 +30,16 @@ void App::on_event() {
 }
 
 void App::on_update() {
+	
 	for (int i = 0; i < m_rigidbodies.size(); i++) {
-		for (int j = i; j < m_rigidbodies.size(); j++) {
-			Rigidbody::check_collision(*m_rigidbodies[i], *m_rigidbodies[j]);
+		for (int j = i+1; j < m_rigidbodies.size(); j++) {
+			Rigidbody::handle_collision(*m_rigidbodies[i], *m_rigidbodies[j]);
 		}
+		
 		m_rigidbodies[i]->on_update();
+	}
+	for (Rigidbody* rb : m_rigidbodies) {
+		rb->on_post_update();
 	}
 }
 

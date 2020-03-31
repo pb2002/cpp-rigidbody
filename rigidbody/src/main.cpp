@@ -1,21 +1,18 @@
 #include "pch.h"
 #include "app.h"
 #include "utils/global.h"
+
 int main(int argc, char* argv[]) {
 	App::init("Test", __param_screenWidth, __param_screenHeight, false);
 	
-	Rigidbody* rb1 = new Rigidbody(1, vec2(0,3), 0.8, 5.0);
-	rb1->set_velocity(vec2(4, 0));
-	App::current->push_rb(rb1);
+	for (int x = -5; x < 6; x += 2) {
+		for (int y = -5; y < 6; y += 2) {
+			double rad = ((rand() % 6) / 10.0) + 0.4;
+			Rigidbody* r = new RigidbodyCircle(vec2(x, y), rad, 0, 12.0, 0.85);
+			App::current->push_rb(r);
+		}
+	}
 
-	Rigidbody* rb2 = new Rigidbody(2, vec2(-3, 2.5), 0.9, 5.0);
-	rb2->set_velocity(vec2(-4, 0));
-	App::current->push_rb(rb2);
-	
-	Rigidbody* rb3 = new Rigidbody(1.25, vec2(3, 2), 0.85, 5.0);
-	rb3->set_velocity(vec2(5, -3));
-	App::current->push_rb(rb3);
-	
 	unsigned int frameStart;
 	unsigned int frameTime;
 	

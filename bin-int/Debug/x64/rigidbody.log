@@ -1,0 +1,55 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (C:\dev\projects\vs\cpp\rigidbody\bin-int\Debug\x64\) contains files shared from another project (SDL2.vcxproj, SDL2main.vcxproj, SDL2_gfx.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  rigidbody.cpp
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\vec2.h(48,28): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\vec2.h(48,25): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:  'initializing': conversion from '_Ty' to '_Ty', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:             _Ty=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:         and
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:             _Ty=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(160,47): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(250): message :  see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(250): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(250): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(250): message :             _This=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(250): message :             _Ty=double,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(250): message :             _Other=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(250): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(251): message :  see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(251): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(251): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(251): message :             _This=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(251): message :             _Ty=double,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(251): message :             _Other=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(251): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :  see reference to function template instantiation 'std::tuple<int,int>::tuple<std::_Exact_args_t,_Ty,_Ty,0>(_Tag,_This2 &&,_Ty &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :             _Ty=double,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :             _Tag=std::_Exact_args_t,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :             _This2=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :  see reference to function template instantiation 'std::tuple<int,int>::tuple<std::_Exact_args_t,_Ty,_Ty,0>(_Tag,_This2 &&,_Ty &&)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :             _Ty=double,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :             _Tag=std::_Exact_args_t,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :             _This2=double
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\tuple(319): message :         ]
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :  see reference to function template instantiation 'std::tuple<int,int>::tuple<double,double,0>(_This2 &&,double &&) noexcept' being compiled
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :         with
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :         [
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :             _This2=double
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :         ]
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :  see reference to function template instantiation 'std::tuple<int,int>::tuple<double,double,0>(_This2 &&,double &&) noexcept' being compiled
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :         with
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :         [
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :             _This2=double
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\src\world.h(16): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\chrono(595): message :  see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\chrono(172): message :  see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\chrono(574): message :  see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>' being compiled
+  rigidbody.vcxproj -> C:\dev\projects\vs\cpp\rigidbody\bin\Debug\x64\rigidbody.exe

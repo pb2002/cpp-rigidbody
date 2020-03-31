@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (C:\dev\projects\vs\cpp\rigidbody\bin-int\Debug\x64\) contains files shared from another project (rigidbody.vcxproj, SDL2.vcxproj, SDL2main.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  SDL2_framerate.c
+  SDL2_gfxPrimitives.c
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\vendor\SDL2_gfx-1.0.4\SDL2_gfxPrimitives.c(1766,1): warning C4028:  formal parameter 1 different from declaration
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\vendor\SDL2_gfx-1.0.4\SDL2_gfxPrimitives.c(1875,29): warning C4244:  'function': conversion from 'double' to 'float', possible loss of data
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\vendor\SDL2_gfx-1.0.4\SDL2_gfxPrimitives.c(1876,38): warning C4244:  'function': conversion from 'double' to 'float', possible loss of data
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\vendor\SDL2_gfx-1.0.4\SDL2_gfxPrimitives.c(1952,39): warning C4244:  'function': conversion from 'double' to 'float', possible loss of data
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\vendor\SDL2_gfx-1.0.4\SDL2_gfxPrimitives.c(3704,43): warning C4244:  'function': conversion from 'double' to 'float', possible loss of data
+  SDL2_rotozoom.c
+  SDL2_imageFilter.c
+  Generating Code...
+C:\dev\projects\vs\cpp\rigidbody\rigidbody\vendor\SDL2_gfx-1.0.4\SDL2_gfxPrimitives.c(3705,43): warning C4244:  'function': conversion from 'double' to 'float', possible loss of data
+     Creating library C:\dev\projects\vs\cpp\rigidbody\bin\Debug\x64\SDL2_gfx.lib and object C:\dev\projects\vs\cpp\rigidbody\bin\Debug\x64\SDL2_gfx.exp
+  SDL2_gfx.vcxproj -> C:\dev\projects\vs\cpp\rigidbody\bin\Debug\x64\SDL2_gfx.dll

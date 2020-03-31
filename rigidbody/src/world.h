@@ -22,7 +22,7 @@ struct World {
 		int offsetx = x - __param_screenWidth / 2;
 		int offsety = y - __param_screenHeight / 2;
 		return vec2(offsetx * m_coordScale / __param_screenHeight,
-					offsety * m_coordScale / __param_screenHeight) - m_offset;
+					-offsety * m_coordScale / __param_screenHeight) - m_offset;
 	}
 private:
 	double m_coordScale;

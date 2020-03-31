@@ -30,10 +30,11 @@ public:
 	void fill_color(int r, int g, int b, int a);
 	// Shows the screen.
 	void show();
+	vec2 screen_to_world(int x, int y);
 	// Returns the top-left corner in world space coordinates.
-	inline vec2 topleft() { return m_world->screen_to_world(0, 0); }
+	vec2 topleft();
 	// Returns the bottom-right corner in world space coordinates.
-	inline vec2 bottomright() { return m_world->screen_to_world(__param_screenWidth, __param_screenHeight); }
+	vec2 bottomright();
 
 private:
 	World* m_world;

@@ -1,6 +1,7 @@
 #pragma once
 #include <SDL.h>
 #include "rigidbody.h"
+#include "rigidbodyCircle.h"
 class App {
 public:
 	static void init(const char* title, int width, int height, bool fullscreen);
