@@ -19,6 +19,25 @@ void Renderer::draw_circle(vec2 pos, double radius) {
 	std::tie(x,y) = m_world->world_to_screen(pos);
 	filledCircleRGBA(m_renderer, x, y, m_world->world_to_screen(radius), m_drawingColor.r, m_drawingColor.g, m_drawingColor.b, m_drawingColor.a);
 }
+void Renderer::draw_rect(vec2 pos, vec2 size, double rotation) {
+	int16_t* x = new int16_t[4];
+	int16_t* y = new int16_t[4];
+
+	vec2 v1 = vec2(-size.x / 2, -size.y / 2);
+	v1.rotate(rotation);
+	std::tie(x[0], y[0]) = m_world->world_to_screen(pos + v1);
+	vec2 v2 = vec2(size.x / 2, -size.y / 2);
+	v2.rotate(rotation);
+	std::tie(x[1], y[1]) = m_world->world_to_screen(pos + v2);
+	vec2 v3 = vec2(size.x / 2, size.y / 2);
+	v3.rotate(rotation);
+	std::tie(x[2], y[2]) = m_world->world_to_screen(pos + v3);
+	vec2 v4 = vec2(-size.x / 2, size.y / 2);
+	v4.rotate(rotation);
+	std::tie(x[3], y[3]) = m_world->world_to_screen(pos + v4);
+	
+	filledPolygonRGBA(m_renderer, x, y, 4, m_drawingColor.r, m_drawingColor.g, m_drawingColor.b, m_drawingColor.a);
+}
 void Renderer::show() {
 
 	SDL_RenderPresent(m_renderer);

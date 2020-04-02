@@ -10,7 +10,7 @@ struct World {
 		this->m_coordScale = coordScale;
 		this->m_offset = offset;
 	}
-	std::tuple<int, int> world_to_screen(vec2& v) {
+	std::tuple<int, int> world_to_screen(vec2 v) {
 		vec2 t = v + m_offset;
 		t *= (__param_screenHeight / m_coordScale);
 		return { t.x + __param_screenWidth / 2, -t.y + __param_screenHeight / 2 };

@@ -26,6 +26,8 @@ public:
 	// Draws a circle at the given position with the given radius, 
 	// using the current drawing color.
 	void draw_circle(vec2 pos, double radius);
+	
+	void draw_rect(vec2 pos, vec2 size, double rotation);
 	// Fills the screen with the given color (RGBA).
 	void fill_color(int r, int g, int b, int a);
 	// Shows the screen.
